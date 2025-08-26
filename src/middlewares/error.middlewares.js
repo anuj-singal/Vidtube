@@ -27,5 +27,5 @@ export{
 
 //*************************not needed as error was resolved ***********************************/
 //***********it works as a middleware as if ApiError not worked as that was extended from Error class
-// so created this method .....can copy it to some other project as well if error occured.............
+// so created this method .....I can copy it to some other project if needed ,if error occured.............
 // **************as this code will remains same no such changes needed */

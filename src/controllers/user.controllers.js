@@ -133,14 +133,14 @@ const registerUser = asyncHandler( async (req, res) => {
             username: username.toLowerCase(),
         });
 
-        console.log("✅ User created in DB:", user);
+        console.log("User created in DB:", user);
 
         const createdUser = await User.findById(user._id).select("-password -refreshToken");
 
-        console.log("✅ Selected createdUser:", createdUser);
+        console.log(" Selected createdUser:", createdUser);
 
         if (!createdUser) {
-            console.log("❌ createdUser not found");
+            console.log("createdUser not found");
             throw new ApiError(500, "Something went wrong while registering the user");
         }
 
@@ -149,7 +149,7 @@ const registerUser = asyncHandler( async (req, res) => {
         );
 
         } catch (error) {
-        console.log("❌ user creation failed:", error.message);
+        console.log("user creation failed:", error.message);
         if (avatar) await deleteFromCloudinary(avatar.public_id);
         if (coverImage) await deleteFromCloudinary(coverImage.public_id);
 
@@ -188,7 +188,7 @@ const loginUser = asyncHandler(async (req, res) =>{
         throw new ApiError(400, "username or email is required")
     }
     
-    // Here is an alternative of above code based on logic discussed in video:
+    // Here is an alternative of above code:
     // if (!(username || email)) {
     //     throw new ApiError(400, "username or email is required")
         
@@ -372,7 +372,7 @@ const updateUserAvatar = asyncHandler(async(req, res) => {
         throw new ApiError(400, "Avatar file is missing")
     }
 
-    //TODO: delete old image - assignment
+    
 
     const avatar = await uploadOnCloudinary(avatarLocalPath)
 
@@ -404,8 +404,7 @@ const updateUserCoverImage = asyncHandler(async(req, res) => {
     if (!coverImageLocalPath) {
         throw new ApiError(400, "Cover image file is missing")
     }
-
-    //TODO: delete old image - assignment
+    
 
 
     const coverImage = await uploadOnCloudinary(coverImageLocalPath)
