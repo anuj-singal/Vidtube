@@ -128,10 +128,19 @@ The app will be available at **http://localhost:8080**
 
 ---
 
-## 📝 License
-This project is licensed under the **MIT License** – see the LICENSE file for details.  
+## 🐛 Bug Reports & Feature Requests
+- Open an issue in the **[GitHub Issues](../../issues)** section.
 
 ---
 
-## 🐛 Bug Reports & Feature Requests
-- Open an issue in the **[GitHub Issues](../../issues)** section.  
+## 📜 License
+
+MIT License
+Copyright (c) 2025 Anuj Singal
+
+---
+
+## 👨‍💻 Author
+
+[![Anuj Singal](https://img.shields.io/badge/Anuj%20Singal-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/anuj-singal)
+
