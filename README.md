@@ -1,5 +1,15 @@
 # 🎬 Vidtube - Video Streaming Platform (Backend)
 
+![Node.js](https://img.shields.io/badge/Node.js-14%2B-green?logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-Backend-blue?logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-brightgreen?logo=mongodb&logoColor=white)
+![JWT](https://img.shields.io/badge/Auth-JWT-orange?logo=jsonwebtokens&logoColor=white)
+![Multer](https://img.shields.io/badge/Uploads-Multer-lightgrey)
+![Cloudinary](https://img.shields.io/badge/Storage-Cloudinary-blue?logo=cloudinary&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow?logo=open-source-initiative&logoColor=white)
+![Contributions welcome](https://img.shields.io/badge/Contributions-Welcome-success?logo=github)
+
+
 A full-featured **video streaming platform backend** built with **Node.js, Express, and MongoDB**.  
 Vidtube allows users to **upload, share, and discover videos** with powerful social features like **comments, likes, subscriptions, playlists, and a dashboard**.
 
